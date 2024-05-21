@@ -6,7 +6,8 @@ import ExampleComponent from "./ExampleComponent";
 function App() {
   return (
     <div className="App">
-      <h1>{format(new Date(), "MMMM do yyyy, h:mm:ss a")}</h1>
+      <h1>expect(screen.getByText("Now")).toBeInTheDocument();
+</h1>
       <p className="App-intro">
         In React apps, we write JSX - it looks like HTML, and uses a lot of HTML
         syntax. JSX lets us include JavaScript functions right along with the
@@ -17,5 +18,6 @@ function App() {
     </div>
   );
 }
+expect(screen.queryAllByText("Whoa!").length).toBeGreaterThan(0);
 
 export default App;
